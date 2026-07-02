@@ -329,47 +329,22 @@
   <div class="vin-item">Location &nbsp;<strong>Cupertino, CA 95014</strong></div>
 </div>
 
-<div class="contact-section">
-  <h2>Interested? Let's talk.</h2>
-  <p class="csub">Asking <strong style="color:#3B82F6;">$29,000</strong>. Available after July 15, 2026. Inquiries and deposits welcome now — serious buyers only.</p>
-  <form id="contactForm">
-    <div class="form-group">
-      <label>Your Name</label>
-      <input type="text" id="fname" placeholder="Jane Smith" required>
-    </div>
-    <div class="form-group">
-      <label>Your Email</label>
-      <input type="email" id="femail" placeholder="you@example.com" required>
-    </div>
-    <div class="form-group">
-      <label>Your Phone (optional)</label>
-      <input type="tel" id="fphone" placeholder="+1 (415) 000-0000">
-    </div>
-    <div class="form-group">
-      <label>Message</label>
-      <textarea id="fmessage">Hi, I'm interested in your 2022 Tesla Model Y Performance. Is it still available?</textarea>
-    </div>
-    <button type="submit" class="submit-btn">Send Message to Seller</button>
-    <div class="form-success" id="formSuccess">✅ Your message has been sent! The seller will be in touch soon.</div>
-  </form>
+<div style="max-width:680px;margin:64px auto 80px;padding:0 36px;text-align:center;">
+  <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(28px,4vw,46px);margin-bottom:10px;">Interested? Let's talk.</h2>
+  <p style="color:#8899BB;font-size:14px;margin-bottom:32px;">Asking <strong style="color:#3B82F6;">$29,000</strong> &nbsp;·&nbsp; Available after July 15, 2026 &nbsp;·&nbsp; Cupertino, CA</p>
+  <div style="display:flex;flex-direction:column;gap:14px;max-width:360px;margin:0 auto;">
+    <a href="mailto:me.kunalkishan@gmail.com?subject=Inquiry%3A%202022%20Tesla%20Model%20Y%20Performance&body=Hi%2C%20I'm%20interested%20in%20your%202022%20Tesla%20Model%20Y%20Performance%20in%20Cupertino.%20Is%20it%20still%20available%3F"
+       style="display:block;background:#1A4ED8;color:#fff;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:18px 24px;border-radius:6px;text-decoration:none;">
+      ✉️ &nbsp; Email Seller
+    </a>
+    <a href="sms:?&body=Hi%2C%20I'm%20interested%20in%20your%202022%20Tesla%20Model%20Y%20Performance%20listed%20in%20Cupertino.%20Is%20it%20still%20available%3F"
+       style="display:block;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.35);color:#3B82F6;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:18px 24px;border-radius:6px;text-decoration:none;">
+      💬 &nbsp; Send a Text
+    </a>
+  </div>
 </div>
 
 <div class="stripe"></div>
-
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const name = document.getElementById('fname').value;
-  const email = document.getElementById('femail').value;
-  const phone = document.getElementById('fphone').value;
-  const message = document.getElementById('fmessage').value;
-  const subject = encodeURIComponent('Inquiry: 2022 Tesla Model Y Performance – VIN 7SAYGDEF3NF513161');
-  const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + (phone || 'Not provided') + '\n\nMessage:\n' + message + '\n\n---\nSent via Tesla Model Y listing page');
-  window.location.href = 'mailto:me.kunalkishan@gmail.com?subject=' + subject + '&body=' + body;
-  document.getElementById('formSuccess').style.display = 'block';
-  this.reset();
-});
-</script>
 
 <!-- LIGHTBOX -->
 <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.92);backdrop-filter:blur(6px);cursor:zoom-out;align-items:center;justify-content:center;flex-direction:column;">
